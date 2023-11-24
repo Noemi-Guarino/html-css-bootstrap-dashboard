@@ -12,13 +12,19 @@
     height: 100px;
 }
 
+.navbar_color{
+    background-color: #E5E5E5;
+   
+}
+
 .size_img{
     height: 70px;
 }
 
 .side_bar{
-    background-color: blue;
+    background-color: #051E34;
     height: calc(100vh - 100px);
+    background-image: url('../img/sidebar-bg.png');
 }
 
 ul> li{
