@@ -12,9 +12,14 @@
     height: 100px;
 }
 
+.allert{
+    border: none;
+    background-color: #F8F9FA;
+    display: inline-block;
+}
+
 .navbar_color{
     background-color: #E5E5E5;
-   
 }
 
 .size_img{
