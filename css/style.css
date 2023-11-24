@@ -39,6 +39,44 @@ ul> li{
 
 .right_content{
     height: calc(100vh - 100px);
-    background-color: violet;
+    background-color: #F8F9FA;
 }
 
+.header_right_col{
+    background-color: #1B72E8;
+}
+
+.badge_color{
+    background-color: #165BBA;
+}
+
+.header_right_col> *{
+    color: white;
+}
+
+.circle_code{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #F26551;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+}
+
+.square_icon{
+    border: 2px solid #6C757D;
+    padding: 4px;
+    border-radius: 5px;
+}
+
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#customers td, #customers th {
+    border-bottom: 1px solid #ddd;
+    padding: 8px;
+  }
