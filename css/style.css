@@ -1,0 +1,28 @@
+*{
+    font-family: sans-serif;
+}
+
+.boolean_container{
+    height: 100vh;
+}
+
+.background_header{
+    background-color: #F8F9FA;
+    height: 100px;
+}
+
+.side_bar{
+    background-color: blue;
+    height: calc(100vh - 100px);
+}
+
+ul> li{
+    list-style: none;
+    color: white;
+}
+
+.right_content{
+    height: calc(100vh - 100px);
+    background-color: violet;
+}
+
