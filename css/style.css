@@ -71,3 +71,8 @@ ul> li{
     border-radius: 5px;
 }
 
+.style_list_check{
+    border: 2px solid #DFDFDF;
+    background-color: none;
+    border-radius: 5px;
+}
