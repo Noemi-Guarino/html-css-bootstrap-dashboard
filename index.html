@@ -141,9 +141,10 @@
                                         <div class="offcanvas-body">
                                             <div class="row">
                                                 <div class="col">
-                                                    <label for="inputEmail4" class="form-label">Email</label>
-                                                    <input type="email" class="form-control" id="inputEmail4">
-                                                </div>
+                                                    <div class="input-group flex-nowrap">
+                                                        <span class="input-group-text" id="addon-wrapping">@</span>
+                                                        <input type="text" class="form-control">
+                                                    </div>                                                
                                                 <div class="col">
                                                     <label for="inputPassword4" class="form-label">Password</label>
                                                     <input type="password" class="form-control" id="inputPassword4">
@@ -156,8 +157,20 @@
                                                 </div>
                                             </div>
                                             <div class="row">
-                                                <div class="col">
-
+                                                <div class="col-4">
+                                                    <label for="inputCity" class="form-label">City</label>
+                                                    <input type="text" class="form-control" id="inputCity">
+                                                </div>
+                                                <div class="col-4">
+                                                    <label for="inputState" class="form-label">State</label>
+                                                    <select id="inputState" class="form-select">
+                                                      <option selected>Choose...</option>
+                                                      <option>...</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-2">
+                                                    <label for="inputZip" class="form-label">Zip</label>
+                                                    <input type="text" class="form-control" id="inputZip">
                                                 </div>
                                             </div>
                                         </div>
