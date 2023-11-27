@@ -16,49 +16,51 @@
     <div class="boolean_container">
         <header>
             <div class="background_header p-3">
-                <div class="row d-flex flex-row align-items-center">
-                    <div class="col-auto">
-                        <div>
-                            <img src="./img/logo.svg" class="d-none d-dm-block d-lg-block" alt="logo boolean">
-                            <img src="./img/mobile-logo.png" class="size_img d-sm-block d-dm-block d-lg-none" alt="logo boolean">
-                        </div>            
-                    </div>
-                    <div class="col">
-                        <nav class="navbar navbar_color">
-                            <div class="container-fluid">
-                            <a class="navbar-brand" href="#">
-                                <i class="fa-solid fa-magnifying-glass" style="color: #9e9e9e;"></i>
-                                <span>Prova a cercare:Lezioni di Laravel</span>
-                            </a>
-                            </div>
-                        </nav>                            
-                    </div>
-                    <div class="col-auto">
-                        <span class="d-sm-none d-dm-none d-lg-inline-block">
-                            <i class="fa-solid fa-list-ul p-2 " style="color: #5B5858;"></i>
-                        </span> 
-                        <span class="d-sm-none d-dm-none d-lg-inline-block"> 
-                            <i class="fa-solid fa-circle-info p-2" style="color: #5B5858;"></i>
-                        </span> 
-                        <span class="d-sm-none d-dm-none d-lg-inline-block">
-                            <i class="fa-solid fa-ellipsis-vertical p-2" style="color: #5B5858;"></i> 
-                        </span>   
-                        <button class="allert" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="fa-solid fa-bell p-2" style="color: #f39512;"></i>
-                        </button>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">Profilo</a></li>
-                          <li><a class="dropdown-item" href="#">Fatturazione</a></li>
-                          <li><a class="dropdown-item" href="#">Logout</a></li>
-                        </ul>
+                <div class="container-fluid">
+                    <div class="row d-flex flex-row align-items-center">
+                        <div class="col-auto">
+                            <div>
+                                <img src="./img/logo.svg" class="d-none d-dm-block d-lg-block" alt="logo boolean">
+                                <img src="./img/mobile-logo.png" class="size_img d-sm-block d-dm-block d-lg-none" alt="logo boolean">
+                            </div>            
+                        </div>
+                        <div class="col">
+                            <nav class="navbar navbar_color">
+                                <div class="container-fluid">
+                                <a class="navbar-brand" href="#">
+                                    <i class="fa-solid fa-magnifying-glass" style="color: #9e9e9e;"></i>
+                                    <span>Prova a cercare:Lezioni di Laravel</span>
+                                </a>
+                                </div>
+                            </nav>                            
+                        </div>
+                        <div class="col-auto">
+                            <span class="d-sm-none d-dm-none d-lg-inline-block">
+                                <i class="fa-solid fa-list-ul p-2 " style="color: #5B5858;"></i>
+                            </span> 
+                            <span class="d-sm-none d-dm-none d-lg-inline-block"> 
+                                <i class="fa-solid fa-circle-info p-2" style="color: #5B5858;"></i>
+                            </span> 
+                            <span class="d-sm-none d-dm-none d-lg-inline-block">
+                                <i class="fa-solid fa-ellipsis-vertical p-2" style="color: #5B5858;"></i> 
+                            </span>   
+                            <button class="allert" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-bell p-2" style="color: #f39512;"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Profilo</a></li>
+                            <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                            <li><a class="dropdown-item" href="#">Logout</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>  
             </div>
         </header>
 
         <main>
-            <div class="container_content">
-                <div class="row row_aside">
+            <div class="container-fluid container_content">
+                <div class="row">
                     <aside class="col-auto d-flex flex-column justify-content-between side_bar p-3">
                         <div>
                             <nav>
@@ -108,22 +110,23 @@
 
                     <div class="col right_content overflow-auto">
                         <div class="row d-flex flex-row align-items-center header_right_col">
-                            <div class="col-6 p-3">
+                            <div class="col-md-5 col-sm-12 p-3">
                                 <h1 class="d-inline-block">Boolean</h1>
                                 <span class="badge badge_color">Piano blaze</span>
                                 <br>
                                 <span class="badge badge_color">3 app</span>
                                 <i class="fa-solid fa-angles-right" style="color: #ffffff;"></i>
-                                <span class="badge badge_color">Boolean mobile app</span>
-                                <span class="badge badge_color">Boolean web app</span>
-                                <span class="badge badge_color">Boolean blog app</span>
+                                <span class="badge badge_color d-inline-block d-dm-inline-block d-lg-none">+</span>   
+                                <span class="badge badge_color d-none d-dm-none d-lg-inline-block">Boolean mobile app</span>
+                                <span class="badge badge_color d-none d-dm-none d-lg-inline-block">Boolean web app</span>
+                                <span class="badge badge_color d-none d-dm-none d-lg-inline-block">Boolean blog app</span>
                             </div>
-                            <div class="col-3">
+                            <div class="col-md-4 col-sm-12">
                                 <h4>Studenti online negli ultimi 30 minuti</h4>
                                 <span>125</span>
                             </div>
-                            <div class="col-3 d-flex flex-row align-items-center">
-                                <div class="p-3">
+                            <div class="col-md-3 col-sm-12 d-flex flex-row align-items-center">
+                                <div class="p-1">
                                     <h4>Nuovo studente</h4>
                                 </div>
                                 <div class="p-1">
@@ -159,101 +162,121 @@
                         </div>
                         
                         <div class="row p-3 d-flex flex-row ">
-                            <div class="col-8">
+                            <div class="col-lg-8 col-sm-12 mb-3">
                                 <div class="card" style="width:100%;">
                                     <div class="card-header">
                                       <strong>Prossime classi</strong>
                                     </div>
                                     <div class="m-3">
-                                        <table class="table table-hover" >
-                                            <tr>
-                                                <td>Nome</td>
-                                                <td>Data inizio</td>
-                                                <td>ROI</td>
-                                                <td>Stato</td>
-                                                <td>Azioni</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="p-2"><i class="circle_code fa-solid fa-code" style="color: #ffffff;"></i>Classe 75</td>
-                                                <td>15 Feb 2021</td>
-                                                <td>20%</td>
-                                                <td><span class="badge text-bg-success">Done</span></td>
-                                                <td>
-                                                <i class="fa-solid fa-pen square_icon" style="color: #6C757D;"></i>
-                                                <i class="fa-solid fa-trash square_icon" style="color: #6C757D;"></i>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="p-2"><i class="circle_code fa-solid fa-code" style="color: #ffffff;"></i>Classe 76</td>
-                                                <td>16 Feb 2021</td>
-                                                <td>20%</td>
-                                                <td><span class="badge text-bg-success">Done</span></td>
-                                                <td>
-                                                <i class="fa-solid fa-pen square_icon" style="color: #6C757D;"></i>
-                                                <i class="fa-solid fa-trash square_icon" style="color: #6C757D;"></i>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="p-2"><i class="circle_code fa-solid fa-code" style="color: #ffffff;"></i>Classe 77</td>
-                                                <td>15 Feb 2021</td>
-                                                <td>20%</td>
-                                                <td><span class="badge text-bg-warning text-white">Process</span></td>
-                                                <td>
-                                                <i class="fa-solid fa-pen square_icon" style="color: #6C757D;"></i>
-                                                <i class="fa-solid fa-trash square_icon" style="color: #6C757D;"></i>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="p-2"><i class="circle_code fa-solid fa-code" style="color: #ffffff;"></i>Classe 78</td>
-                                                <td>18 Feb 2021</td>
-                                                <td>20%</td>
-                                                <td><span class="badge text-bg-success">Done</span></td>
-                                                <td>
-                                                <i class="fa-solid fa-pen square_icon" style="color: #6C757D;"></i>
-                                                <i class="fa-solid fa-trash square_icon" style="color: #6C757D;"></i>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="p-2"><i class="circle_code fa-solid fa-code" style="color: #ffffff;"></i>Classe 79</td>
-                                                <td>19 Feb 2021</td>
-                                                <td>20%</td>
-                                                <td><span class="badge text-bg-danger">Falled</span></td>
-                                                <td>
-                                                <i class="fa-solid fa-pen square_icon" style="color: #6C757D;"></i>
-                                                <i class="fa-solid fa-trash square_icon" style="color: #6C757D;"></i>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="p-2"><i class="circle_code fa-solid fa-code" style="color: #ffffff;"></i>Classe 80</td>
-                                                <td>20 Feb 2021</td>
-                                                <td>20%</td>
-                                                <td><span class="badge text-bg-success">Done</span></td>
-                                                <td>
-                                                <i class="fa-solid fa-pen square_icon" style="color: #6C757D;"></i>
-                                                <i class="fa-solid fa-trash square_icon" style="color: #6C757D;"></i>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="p-2"><i class="circle_code fa-solid fa-code" style="color: #ffffff;"></i>Classe 81</td>
-                                                <td>21 Feb 2021</td>
-                                                <td>20%</td>
-                                                <td><span class="badge text-bg-danger">Falled</span></td>
-                                                <td>
-                                                <i class="fa-solid fa-pen square_icon" style="color: #6C757D;"></i>
-                                                <i class="fa-solid fa-trash square_icon" style="color: #6C757D;"></i>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="p-2"><i class="circle_code fa-solid fa-code" style="color: #ffffff;"></i>Classe 82</td>
-                                                <td>22 Feb 2021</td>
-                                                <td>20%</td>
-                                                <td><span class="badge text-bg-success">Done</span></td>
-                                                <td>
-                                                <i class="fa-solid fa-pen square_icon" style="color: #6C757D;"></i>
-                                                <i class="fa-solid fa-trash square_icon" style="color: #6C757D;"></i>
-                                                </td>
-                                            </tr>
-                                        </table>  
+                                        <table class="table">
+                                            <thead>
+                                              <tr>
+                                                <th scope="col">Nome</th>
+                                                <th scope="col">Data Inizio</th>
+                                                <th scope="col">ROI</th>
+                                                <th scope="col">Stato</th>
+                                                <th scope="col">Azioni</th>
+                                              </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td scope="row">
+                                                        <i class="circle_code fa-solid fa-code" style="color: #ffffff;"></i>Classe 75
+                                                    </td>
+                                                    <td>15 Feb 2021</td>
+                                                    <td>20%</td>
+                                                    <td><span class="badge text-bg-success">Done</span></td>
+                                                    <td>
+                                                        <i class="fa-solid fa-pen square_icon" style="color: #6C757D;"></i>
+                                                        <i class="fa-solid fa-trash square_icon" style="color: #6C757D;"></i>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td scope="row">
+                                                        <i class="circle_code fa-solid fa-code" style="color: #ffffff;"></i>Classe 76
+                                                    </td>
+                                                    <td>16 Feb 2021</td>
+                                                    <td>20%</td>
+                                                    <td><span class="badge text-bg-success">Done</span></td>
+                                                    <td>
+                                                        <i class="fa-solid fa-pen square_icon" style="color: #6C757D;"></i>
+                                                        <i class="fa-solid fa-trash square_icon" style="color: #6C757D;"></i>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td scope="row">
+                                                        <i class="circle_code fa-solid fa-code" style="color: #ffffff;"></i>Classe 77
+                                                    </td>
+                                                    <td>17 Feb 2021</td>
+                                                    <td>20%</td>
+                                                    <td><span class="badge text-bg-warning text-white">Process</span></td>
+                                                    <td>
+                                                        <i class="fa-solid fa-pen square_icon" style="color: #6C757D;"></i>
+                                                        <i class="fa-solid fa-trash square_icon" style="color: #6C757D;"></i>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td scope="row">
+                                                        <i class="circle_code fa-solid fa-code" style="color: #ffffff;"></i>Classe 78
+                                                    </td>
+                                                    <td>18 Feb 2021</td>
+                                                    <td>20%</td>
+                                                    <td><span class="badge text-bg-success">Done</span></td>
+                                                    <td>
+                                                        <i class="fa-solid fa-pen square_icon" style="color: #6C757D;"></i>
+                                                        <i class="fa-solid fa-trash square_icon" style="color: #6C757D;"></i>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td scope="row">
+                                                        <i class="circle_code fa-solid fa-code" style="color: #ffffff;"></i>Classe 79
+                                                    </td>
+                                                    <td>19 Feb 2021</td>
+                                                    <td>20%</td>
+                                                    <td><span class="badge text-bg-danger">Falled</span></td>
+                                                    <td>
+                                                        <i class="fa-solid fa-pen square_icon" style="color: #6C757D;"></i>
+                                                        <i class="fa-solid fa-trash square_icon" style="color: #6C757D;"></i>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td scope="row">
+                                                        <i class="circle_code fa-solid fa-code" style="color: #ffffff;"></i>Classe 80
+                                                    </td>
+                                                    <td>20 Feb 2021</td>
+                                                    <td>20%</td>
+                                                    <td><span class="badge text-bg-success">Done</span></td>
+                                                    <td>
+                                                        <i class="fa-solid fa-pen square_icon" style="color: #6C757D;"></i>
+                                                        <i class="fa-solid fa-trash square_icon" style="color: #6C757D;"></i>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td scope="row">
+                                                        <i class="circle_code fa-solid fa-code" style="color: #ffffff;"></i>Classe 81
+                                                    </td>
+                                                    <td>21 Feb 2021</td>
+                                                    <td>20%</td>
+                                                    <td><span class="badge text-bg-danger">Falled</span></td>
+                                                    <td>
+                                                        <i class="fa-solid fa-pen square_icon" style="color: #6C757D;"></i>
+                                                        <i class="fa-solid fa-trash square_icon" style="color: #6C757D;"></i>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td scope="row">
+                                                        <i class="circle_code fa-solid fa-code" style="color: #ffffff;"></i>Classe 82
+                                                    </td>
+                                                    <td>22 Feb 2021</td>
+                                                    <td>20%</td>
+                                                    <td><span class="badge text-bg-success">Done</span></td>
+                                                    <td>
+                                                        <i class="fa-solid fa-pen square_icon" style="color: #6C757D;"></i>
+                                                        <i class="fa-solid fa-trash square_icon" style="color: #6C757D;"></i>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
                                     </div>
                                 </div>
                                 <div class="mt-4">
@@ -302,7 +325,7 @@
                                     </div>
                                 </div>                                    
                             </div>
-                            <div class="col-4">
+                            <div class="col-lg-4 col-sm-12">
                                 <div class="mb-3">
                                     <div class="card" style="width: auto;">
                                         <div class="card-header">
