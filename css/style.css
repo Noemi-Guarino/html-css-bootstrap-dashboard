@@ -32,7 +32,7 @@
     background-image: url('../img/sidebar-bg.png');
 }
 
-ul> li{
+nav> ul> li{
     list-style: none;
     color: white;
 }
@@ -75,4 +75,11 @@ ul> li{
     border: 2px solid #DFDFDF;
     background-color: none;
     border-radius: 5px;
+}
+
+
+/* ANIMATION */
+.side_bar_option:hover{
+    background-color: lightgray;
+    padding: 4px;
 }

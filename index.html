@@ -34,16 +34,22 @@
                         </nav>                            
                     </div>
                     <div class="col-auto">
-                        <i class="fa-solid fa-list-ul p-2" style="color: #5B5858;"></i>   
-                        <i class="fa-solid fa-circle-info p-2" style="color: #5B5858;"></i>
-                        <i class="fa-solid fa-ellipsis-vertical p-2" style="color: #5B5858;"></i>    
+                        <span class="d-sm-none d-dm-none d-lg-inline-block">
+                            <i class="fa-solid fa-list-ul p-2 " style="color: #5B5858;"></i>
+                        </span> 
+                        <span class="d-sm-none d-dm-none d-lg-inline-block"> 
+                            <i class="fa-solid fa-circle-info p-2" style="color: #5B5858;"></i>
+                        </span> 
+                        <span class="d-sm-none d-dm-none d-lg-inline-block">
+                            <i class="fa-solid fa-ellipsis-vertical p-2" style="color: #5B5858;"></i> 
+                        </span>   
                         <button class="allert" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <i class="fa-solid fa-bell p-2" style="color: #f39512;"></i>
                         </button>
                         <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li><a class="dropdown-item" href="#">Another action</a></li>
-                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                          <li><a class="dropdown-item" href="#">Profilo</a></li>
+                          <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                          <li><a class="dropdown-item" href="#">Logout</a></li>
                         </ul>
                     </div>
                 </div>  
@@ -53,31 +59,31 @@
         <main>
             <div class="container_content">
                 <div class="row row_aside">
-                    <aside class="col-auto d-flex flex-column align-items-center justify-content-between side_bar p-3">
+                    <aside class="col-auto d-flex flex-column justify-content-between side_bar p-3">
                         <div>
                             <nav>
                                 <ul>
-                                    <li class="mb-3">
+                                    <li class="mb-3 side_bar_option">
                                         <span>
                                             <a href=""><i class="fa-solid fa-house" style="color: #ffffff;"></i></a>
                                         </span>
-                                        <span>
+                                        <span class="d-sm-none d-dm-none d-lg-inline-block">
                                             Home
                                         </span>
                                     </li>
-                                    <li class="mb-3">
+                                    <li class="mb-3 side_bar_option">
                                         <span>
                                             <a href=""><i class="fa-solid fa-chart-simple" style="color: #ffffff;"></i></a>
                                         </span>
-                                        <span>
+                                        <span class="d-sm-none d-dm-none d-lg-inline-block">
                                             Stats
                                         </span>
                                     </li>
-                                    <li class="mb-3">
+                                    <li class="mb-3 side_bar_option">
                                         <span>
                                             <a href=""><i class="fa-solid fa-signal" style="color: #ffffff;"></i></a>
                                         </span>
-                                        <span>
+                                        <span class="d-sm-none d-dm-none d-lg-inline-block">
                                             Signals
                                         </span>
                                     </li>
@@ -87,11 +93,11 @@
                         <div>
                             <nav>
                                 <ul>
-                                    <li class="mb-3">
+                                    <li class="mb-3 side_bar_option">
                                         <span>
                                             <a href=""><i class="fa-solid fa-gear" style="color: #ffffff;"></i></a>
                                         </span>
-                                        <span>
+                                        <span class="d-sm-none d-dm-none d-lg-inline-block">
                                             Admin
                                         </span>
                                     </li>
@@ -124,13 +130,28 @@
                                     <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
                                         <i class="fa-regular fa-square-plus fa-2x" style="color: #ffffff;"></i>
                                     </button>
-                                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                    <div class="offcanvas offcanvas-end show" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                                     <div class="offcanvas-header">
                                         <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
                                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                                     </div>
                                     <div class="offcanvas-body">
-                                        <!-- METTERE QUI IL FORM -->
+                                        <form action="">
+                                            <label for="fname">Nome</label><br>
+                                            <input type="text" id="fname" name="sname">
+                                            <label for="sname">Cognome</label><br>
+                                            <input type="text" id="sname" name="sname">
+                                            <div class="input-group mb-3">
+                                                <span class="input-group-text" id="basic-addon1">@</span>
+                                                <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+                                            </div>
+                                            <label for="password">Password</label><br>
+                                            <input type="password" id="Password" name="Password">
+                                            <label for="Città">Città</label><br>
+                                            <input type="text" id="Città" name="Città">
+
+
+                                        </form>
                                     </div>
                                     </div>
                                 </div>
@@ -141,10 +162,10 @@
                             <div class="col-8">
                                 <div class="card" style="width:100%;">
                                     <div class="card-header">
-                                      Prossime classi
+                                      <strong>Prossime classi</strong>
                                     </div>
                                     <div class="m-3">
-                                        <table class="table table-hover p-3 " >
+                                        <table class="table table-hover" >
                                             <tr>
                                                 <td>Nome</td>
                                                 <td>Data inizio</td>
@@ -156,77 +177,77 @@
                                                 <td class="p-2"><i class="circle_code fa-solid fa-code" style="color: #ffffff;"></i>Classe 75</td>
                                                 <td>15 Feb 2021</td>
                                                 <td>20%</td>
-                                                <td><span class="badge text-bg-success">Success</span></td>
+                                                <td><span class="badge text-bg-success">Done</span></td>
                                                 <td>
                                                 <i class="fa-solid fa-pen square_icon" style="color: #6C757D;"></i>
                                                 <i class="fa-solid fa-trash square_icon" style="color: #6C757D;"></i>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td class="p-2"><i class="circle_code fa-solid fa-code" style="color: #ffffff;"></i>Classe 75</td>
-                                                <td>15 Feb 2021</td>
+                                                <td class="p-2"><i class="circle_code fa-solid fa-code" style="color: #ffffff;"></i>Classe 76</td>
+                                                <td>16 Feb 2021</td>
                                                 <td>20%</td>
-                                                <td><span class="badge text-bg-success">Success</span></td>
+                                                <td><span class="badge text-bg-success">Done</span></td>
                                                 <td>
                                                 <i class="fa-solid fa-pen square_icon" style="color: #6C757D;"></i>
                                                 <i class="fa-solid fa-trash square_icon" style="color: #6C757D;"></i>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td class="p-2"><i class="circle_code fa-solid fa-code" style="color: #ffffff;"></i>Classe 75</td>
+                                                <td class="p-2"><i class="circle_code fa-solid fa-code" style="color: #ffffff;"></i>Classe 77</td>
                                                 <td>15 Feb 2021</td>
                                                 <td>20%</td>
-                                                <td><span class="badge text-bg-success">Success</span></td>
+                                                <td><span class="badge text-bg-warning text-white">Process</span></td>
                                                 <td>
                                                 <i class="fa-solid fa-pen square_icon" style="color: #6C757D;"></i>
                                                 <i class="fa-solid fa-trash square_icon" style="color: #6C757D;"></i>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td class="p-2"><i class="circle_code fa-solid fa-code" style="color: #ffffff;"></i>Classe 75</td>
-                                                <td>15 Feb 2021</td>
+                                                <td class="p-2"><i class="circle_code fa-solid fa-code" style="color: #ffffff;"></i>Classe 78</td>
+                                                <td>18 Feb 2021</td>
                                                 <td>20%</td>
-                                                <td><span class="badge text-bg-success">Success</span></td>
+                                                <td><span class="badge text-bg-success">Done</span></td>
                                                 <td>
                                                 <i class="fa-solid fa-pen square_icon" style="color: #6C757D;"></i>
                                                 <i class="fa-solid fa-trash square_icon" style="color: #6C757D;"></i>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td class="p-2"><i class="circle_code fa-solid fa-code" style="color: #ffffff;"></i>Classe 75</td>
-                                                <td>15 Feb 2021</td>
+                                                <td class="p-2"><i class="circle_code fa-solid fa-code" style="color: #ffffff;"></i>Classe 79</td>
+                                                <td>19 Feb 2021</td>
                                                 <td>20%</td>
-                                                <td><span class="badge text-bg-success">Success</span></td>
+                                                <td><span class="badge text-bg-danger">Falled</span></td>
                                                 <td>
                                                 <i class="fa-solid fa-pen square_icon" style="color: #6C757D;"></i>
                                                 <i class="fa-solid fa-trash square_icon" style="color: #6C757D;"></i>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td class="p-2"><i class="circle_code fa-solid fa-code" style="color: #ffffff;"></i>Classe 75</td>
-                                                <td>15 Feb 2021</td>
+                                                <td class="p-2"><i class="circle_code fa-solid fa-code" style="color: #ffffff;"></i>Classe 80</td>
+                                                <td>20 Feb 2021</td>
                                                 <td>20%</td>
-                                                <td><span class="badge text-bg-success">Success</span></td>
+                                                <td><span class="badge text-bg-success">Done</span></td>
                                                 <td>
                                                 <i class="fa-solid fa-pen square_icon" style="color: #6C757D;"></i>
                                                 <i class="fa-solid fa-trash square_icon" style="color: #6C757D;"></i>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td class="p-2"><i class="circle_code fa-solid fa-code" style="color: #ffffff;"></i>Classe 75</td>
-                                                <td>15 Feb 2021</td>
+                                                <td class="p-2"><i class="circle_code fa-solid fa-code" style="color: #ffffff;"></i>Classe 81</td>
+                                                <td>21 Feb 2021</td>
                                                 <td>20%</td>
-                                                <td><span class="badge text-bg-success">Success</span></td>
+                                                <td><span class="badge text-bg-danger">Falled</span></td>
                                                 <td>
                                                 <i class="fa-solid fa-pen square_icon" style="color: #6C757D;"></i>
                                                 <i class="fa-solid fa-trash square_icon" style="color: #6C757D;"></i>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td class="p-2"><i class="circle_code fa-solid fa-code" style="color: #ffffff;"></i>Classe 75</td>
-                                                <td>15 Feb 2021</td>
+                                                <td class="p-2"><i class="circle_code fa-solid fa-code" style="color: #ffffff;"></i>Classe 82</td>
+                                                <td>22 Feb 2021</td>
                                                 <td>20%</td>
-                                                <td><span class="badge text-bg-success">Success</span></td>
+                                                <td><span class="badge text-bg-success">Done</span></td>
                                                 <td>
                                                 <i class="fa-solid fa-pen square_icon" style="color: #6C757D;"></i>
                                                 <i class="fa-solid fa-trash square_icon" style="color: #6C757D;"></i>
@@ -238,7 +259,7 @@
                                 <div class="mt-4">
                                     <div class="card" style="width:auto;">
                                         <div class="card-header">
-                                          F.A.Q
+                                         <strong>F.A.Q</strong> 
                                         </div>
                                     </div>
                                     <div class="accordion" id="accordionExample">
@@ -285,21 +306,21 @@
                                 <div class="mb-3">
                                     <div class="card" style="width: auto;">
                                         <div class="card-header">
-                                        Featured
+                                        <strong>Todo</strong>
                                         </div>
                                         <div class="card-header p-4">
                                             <ul class="list-group list-group-flush style_list_check">
                                                 <li class="list-group-item">
-                                                    <input type="checkbox" name="Kickoff nuove classi" id="">
-                                                    <label for="scales">Kickoff nuove classi</label>
+                                                    <input type="checkbox" name="checked" id="Kickoff">
+                                                    <label for="Kickoff">Kickoff nuove classi</label>
                                                 </li>
                                                 <li class="list-group-item">
-                                                    <input type="checkbox" name="Lezione su Bootstrap" id="">
-                                                    <label for="scales">Lezione su Bootstrap 5 in classe #75</label>
+                                                    <input type="checkbox" name="checked" id="Lesson">
+                                                    <label for="Lesson">Lezione su Bootstrap 5 in classe #75</label>
                                                 </li>
                                                 <li class="list-group-item">
-                                                    <input type="checkbox" name="Controlla username" id="">
-                                                    <label for="scales">Controlla username github studenti</label>
+                                                    <input type="checkbox" name="checked" id="check">
+                                                    <label for="check">Controlla username github studenti</label>
                                                 </li>
                                             </ul>
                                         </div>
@@ -309,7 +330,7 @@
                                     <div class="card" style="width: auto;">
                                         <img src="./img/stats.jpeg" class="card-img-top" alt="...">
                                         <div class="card-body">
-                                          <h5 class="card-title">Utenti attivi</h5>
+                                          <h5 class="card-title"><strong>Utenti attivi</strong></h5>
                                           <p class="card-text">Lista degli utenti attivi in piattaforma nell'ultimo mese</p>
                                         </div>
                                         <ul class="list-group list-group-flush">
